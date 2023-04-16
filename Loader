@@ -1,4 +1,5 @@
 --execute this for it to automatically load a script according to your game (null is cool)
+local market = game:GetService("MarketplaceService")
 local info = market:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
 local games = {
     [{606849621}] = "https://raw.githubusercontent.com/Null7407/NullHub/main/Jailbreak",
