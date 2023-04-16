@@ -1,6 +1,5 @@
 --execute this for it to automatically load a script according to your game (null is cool)
-local market = game:GetService("MarketplaceService")
-local info = market:GetProductInfo(game.PlaceId, Enum.InfoType.Asset)
+local GameName = game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name or 'Game-'..game.PlaceId
 local games = {
     [{606849621}] = "https://raw.githubusercontent.com/Null7407/NullHub/main/Jailbreak",
     [{5910449407}] = "https://raw.githubusercontent.com/Null7407/NullHub/main/Project%20Menacing",
@@ -11,6 +10,6 @@ for ids, url in next, games do
         loadstring(game:HttpGet(url))()
         break
         else
-        print(info.Name)
+        print(GameName)
     end
 end
