@@ -9,6 +9,6 @@ for ids, url in next, games do
         loadstring(game:HttpGet(url))()
         break
         else
-        print("Game is not supported.")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Universal"))()
     end
 end
