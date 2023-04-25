@@ -1,14 +1,7 @@
---execute this for it to automatically load a script according to your game (null is cool)
-local games = {
-    [{606849621}] = "https://raw.githubusercontent.com/Null7407/NullHub/main/Jailbreak",
-    [{5910449407}] = "https://raw.githubusercontent.com/Null7407/NullHub/main/Project%20Menacing",
-}
-
-for ids, url in next, games do
-    if table.find(ids, game.PlaceId) then
-        loadstring(game:HttpGet(url))()
-        break
+   if game.PlaceId == 5910449407 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Project%20Menacing"))()
+    elseif game.PlaceId == 606849621 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Jailbreak"))()
         else
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Universal"))()
     end
-end
