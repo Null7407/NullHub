@@ -2,6 +2,10 @@
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Project%20Menacing"))()
     elseif game.PlaceId == 606849621 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Jailbreak"))()
+    elseif game.PlaceId == 142823291 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/MM2"))()
+    elseif game.PlaceId == 12355337193 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/murderers%20vs%20sheriffs"))()
         else
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Null7407/NullHub/main/Universal"))()
     end
